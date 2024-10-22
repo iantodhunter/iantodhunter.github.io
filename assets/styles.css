@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+  font-family: 'Syne', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #00A8FF; /* Bright blue */
+  color: white;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* Base styles for full-height sections */
+/* Base styles for full-height sections */
+.full-height {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;  /* Aligns content to the left */
+    align-items: center;
+    font-family: 'Syne', sans-serif; /* Use Syne font */
+    padding: 20px;
+    padding-left: 10%;
+    text-align: left;  /* Ensures left alignment of text */
+    letter-spacing: 0.14em; /* 140% letter spacing */
+}
+
+/* Original Color Pairs */
+
+/* Soft Pink background and Bold Blue text */
+.section-1 {
+    background-color: #EEC0DB;
+    color: #162BF4;
+}
+
+/* Soft Peach background and Bright Teal text */
+.section-2 {
+    background-color: #FFEFE5;
+    color: #1FC8A9;
+}
+
+/* Deep Teal background and Light Gray text */
+.section-3 {
+    background-color: #055A5B;
+    color: #E6E6E6;
+}
+
+/* New Color Pairs */
+
+/* Warm Amber background and Bright Sky Blue text */
+.section-4 {
+    background-color: #F5A623;
+    color: #2D9CDB;
+}
+
+/* Rich Purple background and Bright Yellow text */
+.section-5 {
+    background-color: #9B51E0;
+    color: #F2C94C;
+}
+
+/* Forest Green background and Punchy Red text */
+.section-6 {
+    background-color: #27AE60;
+    color: #EB5757;
+}
+
+/* Text styling */
+.full-height h1 {
+    font-size: 4rem;  /* Larger text */
+    font-weight: bold;
+    margin: 0;
+}
+
+.full-height p {
+    font-size: 2rem;  /* Larger paragraph text */
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+ 
+ /* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts grid items to fit available space */
+    gap: 20px; /* Spacing between grid items */
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Grid item styles */
+.grid-item {
+    background-color: #F5A623; /* Change this to any color */
+    height: 200px; /* Example height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;  /* Dark background */
+  color: white;
+  font-family: 'Syne', sans-serif;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #777; /* Divider color */
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
