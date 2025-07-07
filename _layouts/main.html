@@ -6,6 +6,47 @@
   <title> ░▒▓ {{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .display-section {
+      text-align: center;
+      margin: 7rem 0 0 0;
+    }
+    .display-section h1 {
+      font-family: 'Silkscreen', monospace;
+      font-weight: 700;
+      font-size: clamp(3rem, 10vw, 120px);
+      letter-spacing: 0.08em;
+      line-height: 1.05;
+      image-rendering: pixelated;
+      margin: 0 0 2.5rem 0;
+    }
+    .display-blue { color: #1da1ff; }
+    .display-magenta { color: #c81da1; }
+    .display-green { color: #217a1d; }
+    .main-headshot {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      vertical-align: middle;
+      margin-right: 1rem;
+      margin-bottom: 0.2rem;
+      display: inline-block;
+    }
+    .main-intro {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+    .main-intro-text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1.2rem;
+      font-family: 'Quicksand', Arial, sans-serif;
+      color: #232323;
+      max-width: 700px;
+    }
+  </style>
 </head>
 <body>
   <div class="sticky-sidebar">
@@ -13,7 +54,33 @@
     <div class="sidebar-name">Ian Todhunter</div>
   </div>
   <div class="main-content">
-    {{ content }}
+    {% assign intro_found = false %}
+    {% capture new_content %}
+      {% for line in content | split: '\n' %}
+        {% if line contains '### Introduction' %}
+          {% assign intro_found = true %}
+          <div class="main-intro">
+            <img src="/assets/images/Ian-Headshot-circle.png" alt="Ian Todhunter Headshot" class="main-headshot" />
+            <div class="main-intro-text">
+        {% elsif intro_found and line contains '###' %}
+            </div></div>
+            {{ line }}
+            {% assign intro_found = false %}
+        {% elsif intro_found %}
+            {{ line }}
+        {% else %}
+            {{ line }}
+        {% endif %}
+      {% endfor %}
+      {% if intro_found %}</div></div>{% endif %}
+    {% endcapture %}
+    {{ new_content | markdownify }}
+
+    <div class="display-section">
+      <h1 class="display-blue">INDUSTRY<br>PLATFORMS</h1>
+      <h1 class="display-magenta">SAAS PLAYBOOK</h1>
+      <h1 class="display-green">DESIGN<br>SYSTEMS</h1>
+    </div>
   </div>
   {% include footer.html %}
 </body>
