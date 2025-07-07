@@ -5,13 +5,6 @@
 layout: work
 ---
 
-<!--
-Headline Options (choose one):
-1. Principal Designer
-2. Principal Designer | Building the Future of Industrial Platforms
-3. Principal Designer – Leading Teams, Shaping Platforms, Driving Innovation
--->
-
 ![Logo](/assets/images/Ian-logo-old.svg)
 ![Ian Todhunter Headshot](/assets/images/Ian-Headshot-circle.png)
 
@@ -47,3 +40,7 @@ I'm at the forefront of exploring how AI will transform the way we develop produ
 - 2024 In-House Design Team of the Year (AIGA Pittsburgh)
 
 *For personal/family info, see About page.*
+
+<main>
+  {{ content }}
+</main>
