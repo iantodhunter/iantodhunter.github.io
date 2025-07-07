@@ -2,17 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
 
-body, p, li, .body-text {
+body {
+  background: #FFFDFF;
   font-family: 'Quicksand', Arial, sans-serif;
   color: #232323;
+  margin: 0;
+  padding: 0;
 }
 
 /* Display text utility for giant headings */
 .display-text {
   font-family: 'Silkscreen', monospace;
   font-weight: 700;
+  font-size: 3.2rem;
   letter-spacing: 0.08em;
-  line-height: 1.1;
+  line-height: 1.05;
+  image-rendering: pixelated;
 }
 
 /* Section heading color classes */
@@ -234,4 +239,57 @@ footer p {
   font-weight: 500;
   font-size: 1.1rem;
   margin-top: 0.5rem;
+}
+
+.sticky-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: none;
+}
+
+.sticky-sidebar .logo {
+  width: 64px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.sticky-sidebar .sidebar-name {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-top: 0.2rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.main-content {
+  margin-left: 140px;
+  max-width: 900px;
+  margin-right: auto;
+  margin-top: 0;
+  padding: 0 2rem;
+}
+
+.inline-headshot {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+header, nav, .full-height, .section-1, .section-2, .section-3, .section-4, .section-5, .section-6 {
+  background: none !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  border: none !important;
 }

@@ -6,7 +6,6 @@ layout: work
 ---
 
 ![Logo](/assets/images/Ian-logo-old.svg)
-![Ian Todhunter Headshot](/assets/images/Ian-Headshot-circle.png)
 
 # Principal Designer
 
@@ -20,7 +19,7 @@ layout: work
 
 ### Introduction
 
-<p class="body-text">I'm a Principal Designer. I build and scale design teams, launch digital platforms, and deliver results in industrial and manufacturing. I lead by example, focus on outcomes, and get things done. I work well in global, remote teams and push people to do their best work.</p>
+<img src="/assets/images/Ian-Headshot-circle.png" alt="Ian Todhunter Headshot" class="inline-headshot" /> <p class="body-text" style="display:inline;">I'm a Principal Designer. I build and scale design teams, launch digital platforms, and deliver results in industrial and manufacturing. I lead by example, focus on outcomes, and get things done. I work well in global, remote teams and push people to do their best work.</p>
 
 ### Experience Highlights
 - Led the creation and growth of in-house design teams, earning multiple iF Awards and industry recognition (Hexagon Manufacturing Intelligence, Eaton).

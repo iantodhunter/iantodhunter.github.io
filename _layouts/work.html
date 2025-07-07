@@ -10,12 +10,13 @@
   <!-- Example usage: <h1 class="display-text display-blue">INDUSTRY PLATFORMS</h1> -->
 </head>
 <body>
-  {% include header.html %}
-
-  <main>
+  <div class="sticky-sidebar">
+    <img src="/assets/images/Ian-logo-old.svg" alt="Logo" class="logo" />
+    <div class="sidebar-name">Ian Todhunter</div>
+  </div>
+  <div class="main-content">
     {{ content }}
-  </main>
-
+  </div>
   {% include footer.html %}
 
   <!-- Add your JavaScript here, before the closing body tag -->
