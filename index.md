@@ -12,18 +12,16 @@ Headline Options (choose one):
 3. Principal Designer – Leading Teams, Shaping Platforms, Driving Innovation
 -->
 
-<div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
-  <!-- Logo Placeholder -->
-  <img src="/assets/images/Ian-logo-old.svg" alt="Logo" style="height: 80px;" />
-  <!-- Headshot Placeholder -->
-  <img src="/assets/images/Ian-Headshot-circle.png" alt="Ian Todhunter Headshot" style="height: 100px; border-radius: 50%; border: 2px solid #eee;" />
-  <div>
-    <h1 style="margin-bottom: 0.5rem; color: #1a365d; font-size: 2.5rem; font-weight: bold;">Principal Designer</h1>
-    <h2 style="margin-bottom: 0.5rem; color: #1a365d; font-size: 1.5rem; font-weight: 500;">Leading teams and building platforms in the Industrial & Manufacturing space</h2>
-    <div style="color: #e94e77; font-size: 1.1rem; margin-bottom: 1rem;">Driving AI-first design and modern product experiences</div>
-    <a href="https://linkedin.com/in/iantodhunter" target="_blank" style="color: #1a365d; text-decoration: underline; font-weight: 500;">Connect on LinkedIn</a>
-  </div>
-</div>
+![Logo](/assets/images/Ian-logo-old.svg)
+![Ian Todhunter Headshot](/assets/images/Ian-Headshot-circle.png)
+
+# Principal Designer
+
+## Leading teams and building platforms in the Industrial & Manufacturing space
+
+**Driving AI-first design and modern product experiences**
+
+[Connect on LinkedIn](https://linkedin.com/in/iantodhunter)
 
 ---
 
@@ -48,4 +46,4 @@ I'm at the forefront of exploring how AI will transform the way we develop produ
 - [iF Design Award Winner: Hexagon Nexus Home](https://ifdesign.com/en/winner-ranking/project/nexus-home/643106)
 - 2024 In-House Design Team of the Year (AIGA Pittsburgh)
 
-<!-- For personal/family info, see About page -->
+*For personal/family info, see About page.*
