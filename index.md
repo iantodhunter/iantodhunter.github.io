@@ -20,7 +20,7 @@ layout: work
 
 ### Introduction
 
-I'm a Principal Designer. I build and scale design teams, launch digital platforms, and deliver results in industrial and manufacturing. I lead by example, focus on outcomes, and get things done. I work well in global, remote teams and push people to do their best work.
+<p class="body-text">I'm a Principal Designer. I build and scale design teams, launch digital platforms, and deliver results in industrial and manufacturing. I lead by example, focus on outcomes, and get things done. I work well in global, remote teams and push people to do their best work.</p>
 
 ### Experience Highlights
 - Led the creation and growth of in-house design teams, earning multiple iF Awards and industry recognition (Hexagon Manufacturing Intelligence, Eaton).
@@ -30,7 +30,7 @@ I'm a Principal Designer. I build and scale design teams, launch digital platfor
 - Currently managing a high-performing, fully remote, global team of designers.
 
 ### Shaping the Future of Product Development with AI
-I'm at the forefront of exploring how AI will transform the way we develop products—leveraging emerging technologies to create smarter, more adaptive, and efficient solutions. My teams are leading the charge in integrating AI-driven capabilities that redefine what's possible in industrial software and product experiences.
+<p class="body-text">I'm at the forefront of exploring how AI will transform the way we develop products—leveraging emerging technologies to create smarter, more adaptive, and efficient solutions. My teams are leading the charge in integrating AI-driven capabilities that redefine what's possible in industrial software and product experiences.</p>
 
 ### Awards & Recognition
 - [iF Design Award Winner: Eaton Brightlayer Industrial Remote Monitoring App](https://ifdesign.com/en/winner-ranking/project/eaton-brightlayer-industrial-remote-monitoring-app/316753)
@@ -40,6 +40,20 @@ I'm at the forefront of exploring how AI will transform the way we develop produ
 - 2024 In-House Design Team of the Year (AIGA Pittsburgh)
 
 *For personal/family info, see About page.*
+
+---
+
+<section style="margin: 6rem 0; text-align: center;">
+  <h1 class="display-text display-blue">INDUSTRY<br>PLATFORMS</h1>
+</section>
+
+<section style="margin: 6rem 0; text-align: center;">
+  <h1 class="display-text display-magenta">SAAS PLAYBOOK</h1>
+</section>
+
+<section style="margin: 6rem 0; text-align: center;">
+  <h1 class="display-text display-green">DESIGN<br>SYSTEMS</h1>
+</section>
 
 <main>
   {{ content }}
