@@ -11,58 +11,13 @@
   {% include header.html %}
 
   <!-- Main content here -->
-  <div class="full-height section-1">
-    <h1> Welcome to My Site ▒</h1>
-    <p>Beautiful color gradients for full-height sections.</p>
-</div>
-
-<div class="full-height section-2">
-    <h1>Desinging products that demand critical human-computer interaction for 10+ years.</h1>
-    <p>Learning through design and experience.</p>
-
-</div>
-<div class="grid-container">
-  {% for page in site.pages %}
-    {% if page.title %}
-      <div class="grid-item">
-        <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-        <p>{{ page.excerpt | truncatewords: 30 }}</p>
-        <a class="read-more" href="{{ page.url }}">Read more</a>
-      </div>
-    {% endif %}
-  {% endfor %}
-      <div class="grid-item" style="background-color: #055A5B;">Item 5</div>
-    <div class="grid-item" style="background-color: #E6E6E6; color: black;">Item 6</div>
-</div>
-   
-
-
-<div class="full-height section-3">
-    <h1>Projects</h1>
-    <p>Exploring the intersection of design and technology.</p>
-</div>
-
-<div class="full-height section-4">
-    <h1>Section 4</h1>
-    <p>Another beautiful gradient pair.</p>
-</div>
-
-<div class="full-height section-5">
-    <h1>Section 5</h1>
-    <p>Bold, striking colors to grab attention.</p>
-</div>
-
-<div class="full-height section-6">
-    <h1>Section 6</h1>
-    <p>Nature meets intensity in this color combination.</p>
-</div>
-
+  <div class="main-content">
+    {{ content }}
+  </div>
 
   {% include footer.html %}
 
   <!-- Add your JavaScript here, before the closing body tag -->
-
-
   <script>
     const baseColor = '#00A8FF'; // Define base color (your header blue)
     const triadicColors = ['#F4F4F4', '#FFABAB', '#FFD700', '#8EC5FC']; // Example colors for sections
@@ -115,7 +70,6 @@
     // Add event listener for scrolling
     window.addEventListener('scroll', determineSectionInView);
   </script>
-
 
 </body>
 </html>

@@ -144,3 +144,150 @@ footer p {
   font-size: 14px;
   color: white;
 }
+
+/* Main Page Content Styles */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Syne', sans-serif;
+  line-height: 1.6;
+}
+
+.main-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.main-content h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1a365d;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: 0.03em;
+}
+
+.main-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #055A5B;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 3px solid #EEC0DB;
+  padding-bottom: 0.5rem;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.main-content strong {
+  color: #e94e77;
+  font-weight: 600;
+}
+
+.main-content a {
+  color: #1a365d;
+  text-decoration: none;
+  border-bottom: 2px solid #EEC0DB;
+  transition: all 0.3s ease;
+}
+
+.main-content a:hover {
+  color: #e94e77;
+  border-bottom-color: #e94e77;
+}
+
+.main-content ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.main-content li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.main-content hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, #EEC0DB, #FFEFE5, #055A5B);
+  margin: 3rem 0;
+  border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #EEC0DB 0%, #FFEFE5 50%, #055A5B 100%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+
+.hero-section h2 {
+  color: #055A5B;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section strong {
+  color: #e94e77;
+  font-size: 1.3rem;
+}
+
+.hero-section a {
+  display: inline-block;
+  background: #1a365d;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #1a365d;
+}
+
+.hero-section a:hover {
+  background: transparent;
+  color: #1a365d;
+}
+
+/* Skills Section */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #F5A623, #9B51E0);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
