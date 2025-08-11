@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: main
 ---
 
 # Principal Designer
@@ -24,6 +24,7 @@ I'm a Principal Designer. I build and scale design teams, launch digital platfor
 - Currently managing a high-performing, fully remote, global team of designers.
 
 ### Shaping the Future of Product Development with AI
+
 I'm at the forefront of exploring how AI will transform the way we develop products—leveraging emerging technologies to create smarter, more adaptive, and efficient solutions. My teams are leading the charge in integrating AI-driven capabilities that redefine what's possible in industrial software and product experiences.
 
 ### Awards & Recognition
@@ -33,10 +34,4 @@ I'm at the forefront of exploring how AI will transform the way we develop produ
 - [iF Design Award Winner: Hexagon Nexus Home](https://ifdesign.com/en/winner-ranking/project/nexus-home/643106)
 - 2024 In-House Design Team of the Year (AIGA Pittsburgh)
 
----
-
-## INDUSTRY PLATFORMS
-
-## SAAS PLAYBOOK
-
-## DESIGN SYSTEMS
+*For personal/family info, see About page.*
