@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> ░▒▓ {{ page.title }}</title>
+  <title>Ian Todhunter - Principal Designer</title>
   <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
-  <!-- Import Quicksand and Silkscreen fonts for body and display text -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Silkscreen:wght@700&display=swap" rel="stylesheet">
-  <!-- Example usage: <h1 class="display-text display-blue">INDUSTRY PLATFORMS</h1> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="sticky-sidebar">
@@ -19,60 +17,5 @@
   </div>
 
   {% include footer.html %}
-
-  <!-- Add your JavaScript here, before the closing body tag -->
-  <script>
-    const baseColor = '#00A8FF'; // Define base color (your header blue)
-    const triadicColors = ['#F4F4F4', '#FFABAB', '#FFD700', '#8EC5FC']; // Example colors for sections
-    let currentSection = 0;
-
-    // Function to change the SVG color
-    function changeSvgColor(logoSvg, color) {
-      logoSvg.querySelectorAll('*').forEach(element => {
-        element.setAttribute('fill', color);
-      });
-    }
-
-    // Function to determine which section is in view
-    function determineSectionInView() {
-      const sections = document.querySelectorAll('.full-section');
-      const header = document.querySelector('header');
-      const logoSvg = document.querySelector('.logo-container svg');
-      sections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-          if (currentSection !== index) {
-            currentSection = index;
-            // Change header background and SVG logo color
-            header.style.backgroundColor = triadicColors[index];
-            if (logoSvg) {
-              changeSvgColor(logoSvg, triadicColors[index]); // Use triadicColors for demo purposes
-            }
-          }
-        }
-      });
-    }
-
-    // Fetch and inject the SVG, then apply hover event listeners
-    function injectSVG(url, containerSelector) {
-      fetch(url)
-        .then(response => response.text())
-        .then(data => {
-          const container = document.querySelector(containerSelector);
-          container.innerHTML = data;
-          determineSectionInView(); // Set the initial color based on the first section
-        })
-        .catch(error => console.error('Error fetching SVG:', error));
-    }
-
-    // Inject SVG on page load
-    window.onload = function () {
-      injectSVG('{{ "/assets/images/Ian-logo-old.svg" | relative_url }}', '.logo-container');
-    };
-
-    // Add event listener for scrolling
-    window.addEventListener('scroll', determineSectionInView);
-  </script>
-
 </body>
 </html>
