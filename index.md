@@ -22,7 +22,7 @@ layout: main
     <span><strong>Impact:</strong> 0→1 platform serving 10,000+ industrial users</span>
   </div>
   <p>Led the complete design and development of Eaton's flagship industrial IoT platform. Built a comprehensive design system, managed a team of 8 designers, and delivered a platform that transformed how industrial facilities monitor and manage critical infrastructure.</p>
-  <a href="/work/eaton-brightlayer" class="project-link">View Case Study →</a>
+  <a href="/work" class="project-link">View Case Study →</a>
 </div>
 
 ---
