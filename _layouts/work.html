@@ -12,7 +12,19 @@
     <img src="/assets/images/Ian-logo-old.svg" alt="Logo" class="logo" />
     <div class="sidebar-name">Ian Todhunter</div>
   </div>
+  
   <div class="main-content">
+    {% if page.title and page.title != 'Ian Todhunter' %}
+    <div class="breadcrumb">
+      <div class="breadcrumb-item">
+        <a href="/">Home</a>
+      </div>
+      <div class="breadcrumb-item active">
+        {{ page.title }}
+      </div>
+    </div>
+    {% endif %}
+    
     {{ content }}
   </div>
 
