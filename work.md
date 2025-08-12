@@ -12,7 +12,7 @@ title: Work
 <div class="case-study">
   <h2>Eaton Brightlayer Industrial Platform</h2>
   <div class="case-meta">
-    <span class="case-role">Lead Designer & Product Manager</span>
+    <span class="case-role">Product Designer</span>
     <span class="case-duration">2020-2024</span>
     <span class="case-impact">0→1 platform serving 10,000+ users</span>
   </div>

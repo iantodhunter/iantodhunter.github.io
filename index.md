@@ -17,7 +17,7 @@ layout: main
 <div class="featured-project">
   <h3>Eaton Brightlayer Industrial Platform</h3>
   <div class="project-meta">
-    <span><strong>Role:</strong> Lead Designer & Product Manager</span>
+    <span><strong>Role:</strong> Product Designer</span>
     <span><strong>Duration:</strong> 2020-2024</span>
     <span><strong>Impact:</strong> 0→1 platform serving 10,000+ industrial users</span>
   </div>
