@@ -208,6 +208,85 @@ footer p {
   color: #6c757d;
 }
 
+/* Homepage Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 40px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-section h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 40px 0;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.hero-section h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #4a5568;
+  margin: 0 0 60px 0;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.hero-section .hero-description {
+  font-size: 1.4rem;
+  color: #6c757d;
+  margin-bottom: 80px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero-section .hero-cta {
+  display: inline-block;
+  background: #FF0241;
+  color: white;
+  padding: 24px 48px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 2px solid #FF0241;
+  box-shadow: 0 8px 32px rgba(255, 2, 65, 0.3);
+}
+
+.hero-section .hero-cta:hover {
+  background: #d10035;
+  border-color: #d10035;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(255, 2, 65, 0.4);
+}
+
 /* Main Page Content Styles */
 .main-content {
   max-width: 800px;
@@ -230,7 +309,7 @@ footer p {
   font-size: 2.2rem;
   font-weight: 600;
   color: #1a1a1a;
-  margin: 80px 0 40px 0;
+  margin: 120px 0 40px 0;
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
@@ -239,7 +318,7 @@ footer p {
   font-size: 1.8rem;
   font-weight: 600;
   color: #2d3748;
-  margin: 56px 0 28px 0;
+  margin: 80px 0 28px 0;
   letter-spacing: -0.01em;
   line-height: 1.3;
 }
@@ -287,31 +366,38 @@ footer p {
   border: none;
   height: 1px;
   background: #e5e5e5;
-  margin: 64px 0;
+  margin: 120px 0;
   border-radius: 0;
 }
 
 /* Featured Project Section */
 .featured-project {
-  background: #f8f9fa;
+  background: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  padding: 48px;
-  margin: 64px 0;
+  border-radius: 12px;
+  padding: 80px;
+  margin: 120px 0;
   border-left: 4px solid #FF0241;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.featured-project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .featured-project h3 {
   color: #1a1a1a;
-  margin-bottom: 24px;
-  font-size: 1.8rem;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
 }
 
 .featured-project .project-meta {
   display: flex;
-  gap: 32px;
-  margin-bottom: 32px;
-  font-size: 0.9rem;
+  gap: 40px;
+  margin-bottom: 40px;
+  font-size: 1rem;
   color: #6c757d;
 }
 
@@ -325,43 +411,48 @@ footer p {
   display: inline-block;
   background: #FF0241;
   color: white;
-  padding: 16px 32px;
-  border-radius: 6px;
+  padding: 20px 40px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  margin-top: 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 32px;
+  box-shadow: 0 4px 16px rgba(255, 2, 65, 0.3);
 }
 
 .featured-project .project-link:hover {
   background: #d10035;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 2, 65, 0.4);
 }
 
 /* Get in Touch Section */
 .get-in-touch {
   background: #ffffff;
   border: 2px solid #FF0241;
-  border-radius: 8px;
-  padding: 56px;
-  margin: 80px 0;
+  border-radius: 12px;
+  padding: 80px;
+  margin: 120px 0;
   text-align: center;
+  box-shadow: 0 8px 32px rgba(255, 2, 65, 0.1);
 }
 
 .get-in-touch h2 {
   margin-top: 0;
   color: #1a1a1a;
+  font-size: 2.8rem;
 }
 
 .get-in-touch p {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: #4a5568;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  line-height: 1.6;
 }
 
 .get-in-touch .cta-links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -369,25 +460,28 @@ footer p {
 .get-in-touch .cta-links a {
   background: #FF0241;
   color: white;
-  padding: 20px 40px;
-  border-radius: 6px;
+  padding: 24px 48px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   border: 2px solid #FF0241;
+  font-size: 18px;
+  box-shadow: 0 4px 16px rgba(255, 2, 65, 0.3);
 }
 
 .get-in-touch .cta-links a:hover {
   background: #d10035;
   border-color: #d10035;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 2, 65, 0.4);
 }
 
 /* Blog Post Styles */
 .blog-post {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 64px;
-  margin-bottom: 64px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .blog-post:last-child {
@@ -418,22 +512,22 @@ footer p {
 /* Work Page Styles */
 .case-study {
   border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  padding: 48px;
-  margin: 64px 0;
-  transition: all 0.2s ease;
+  border-radius: 12px;
+  padding: 80px;
+  margin: 80px 0;
+  transition: all 0.3s ease;
 }
 
 .case-study:hover {
   border-color: #FF0241;
-  box-shadow: 0 4px 16px rgba(255, 2, 65, 0.1);
+  box-shadow: 0 8px 32px rgba(255, 2, 65, 0.1);
 }
 
 .case-study .case-meta {
   display: flex;
-  gap: 32px;
-  margin-bottom: 32px;
-  font-size: 0.9rem;
+  gap: 40px;
+  margin-bottom: 40px;
+  font-size: 1rem;
   color: #6c757d;
 }
 
@@ -459,12 +553,11 @@ footer p {
 
 /* Breadcrumb Styles */
 .breadcrumb {
-  background: #f8f9fa;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 20px 40px;
+  padding: 32px 0;
   margin-bottom: 0;
   font-size: 0.9rem;
   color: #6c757d;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -712,21 +805,21 @@ footer p {
   }
   
   .featured-project {
-    padding: 32px;
-    margin: 48px 0;
+    padding: 48px 32px;
+    margin: 80px 0;
   }
   
   .case-study {
-    padding: 32px;
-    margin: 48px 0;
-  }
-  
-  .get-in-touch {
-    padding: 40px;
+    padding: 48px 32px;
     margin: 64px 0;
   }
   
+  .get-in-touch {
+    padding: 48px 32px;
+    margin: 80px 0;
+  }
+  
   .breadcrumb {
-    padding: 16px 20px;
+    padding: 24px 0;
   }
 }
