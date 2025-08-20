@@ -240,12 +240,12 @@ footer p {
 }
 
 .hero-section h1 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 40px 0;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .hero-section h2 {
@@ -707,46 +707,153 @@ footer p {
   max-width: calc(100% - 72px);
 }
 
-/* Project Card */
+/* Work Section Styles */
+.work-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 80px 0;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+  margin: 80px 0;
+}
+
 .project-card {
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
-  padding: 32px;
-  margin: 32px 0;
-  transition: all 0.2s ease;
+  padding: 64px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border-color: #FF0241;
 }
 
 .project-card h3 {
   color: #1a1a1a;
-  margin-bottom: 16px;
-  font-size: 1.5rem;
+  margin-bottom: 32px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.project-card .project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.project-card .project-meta span {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.project-card .project-meta strong {
+  color: #1a1a1a;
+  min-width: 80px;
 }
 
 .project-card p {
+  font-size: 1.2rem;
   color: #4a5568;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-.project-card .project-link {
-  display: inline-block;
-  background: #FF0241;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
+.project-card ul {
+  margin: 32px 0;
+  padding-left: 24px;
+}
+
+.project-card li {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.case-study-btn {
+  background: #f8f9fa;
+  color: #adb5bd;
+  border: 1px solid #e5e5e5;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
   font-weight: 500;
+  cursor: not-allowed;
   transition: all 0.2s ease;
+  margin-top: 32px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.project-card .project-link:hover {
-  background: #d10035;
-  transform: translateY(-1px);
+.case-study-btn:hover {
+  background: #f8f9fa;
+  color: #adb5bd;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments for work grid */
+@media (max-width: 768px) {
+  .work-title {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+  }
+  
+  .work-grid {
+    gap: 60px;
+    margin: 60px 0;
+  }
+  
+  .project-card {
+    padding: 48px 32px;
+  }
+  
+  .project-card h3 {
+    font-size: 2rem;
+  }
+  
+  .project-card .project-meta {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .work-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+  
+  .work-grid {
+    gap: 40px;
+    margin: 40px 0;
+  }
+  
+  .project-card {
+    padding: 32px 24px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.8rem;
+  }
 }
 
 /* Responsive Design */
@@ -794,6 +901,10 @@ footer p {
   
   .hero-section {
     padding: 48px 32px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3.5rem;
   }
   
   .skill-card {

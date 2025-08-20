@@ -6,7 +6,7 @@ layout: main
   <div class="hero-content">
     <h1>Principal Designer</h1>
     <h2>Leading teams and building platforms in the Industrial & Manufacturing space</h2>
-    <p class="hero-description">Driving AI-first design and modern product experiences that transform how industries work.</p>
+    <p class="hero-description">Driving AI-first design for modern product experiences that transform how industries work.</p>
     <a href="#work" class="hero-cta">View My Work</a>
   </div>
 </div>
@@ -14,26 +14,60 @@ layout: main
 ---
 
 <section id="work" style="margin-top: 120px;">
-  <h2>Featured Project</h2>
+  <h2 class="work-title">Work</h2>
   
-  <div class="featured-project">
-    <h3>Eaton Brightlayer Industrial Platform</h3>
-    <div class="project-meta">
-      <span><strong>Role:</strong> Product Designer</span>
-      <span><strong>Duration:</strong> 2020-2024</span>
-      <span><strong>Impact:</strong> 0→1 platform serving 10,000+ industrial users</span>
+  <div class="work-grid">
+    <div class="project-card">
+      <h3>Eaton Brightlayer Industrial Platform</h3>
+      <div class="project-meta">
+        <span><strong>Role:</strong> Lead Designer</span>
+        <span><strong>Duration:</strong> 2018-2020</span>
+        <span><strong>Impact:</strong> Design system 0 to 1, platform interactions, interaction design library for large industrial energy and manufacturing users</span>
+      </div>
+      <p>Led research and prototyping for the development of Eaton's flagship industrial IoT platform.</p>
+      <ul>
+        <li>Lead designer among a team of 4</li>
+        <li>Built confidence in the solution through on-site visits for discovery</li>
+        <li>Built relationships with third party integrators</li>
+        <li>Ultimately, transforming how industrial facilities monitor and manage critical infrastructure</li>
+      </ul>
+      <button class="case-study-btn" disabled>Contact for complete case study</button>
     </div>
-    <p>Led the complete design and development of Eaton's flagship industrial IoT platform. Built a comprehensive design system, managed a team of 8 designers, and delivered a platform that transformed how industrial facilities monitor and manage critical infrastructure.</p>
-    <a href="/work" class="project-link">View Case Study →</a>
+
+    <div class="project-card">
+      <h3>Hexagon Manufacturing Intelligence Platform</h3>
+      <div class="project-meta">
+        <span><strong>Role:</strong> Principal Designer</span>
+        <span><strong>Duration:</strong> 2021-2025</span>
+        <span><strong>Impact:</strong> Unified experience across multiple applications and user roles</span>
+      </div>
+      <p>Led the design of flagship manufacturing platform creating unified experience across multiple web apps, desktop apps, and user roles.</p>
+      <ul>
+        <li>Unified design language across 15+ applications</li>
+        <li>Role-based interfaces for engineers, managers, and operators</li>
+        <li>Scalable React component system</li>
+        <li>Multiple iF Awards for platform ecosystem</li>
+      </ul>
+      <button class="case-study-btn" disabled>Contact for complete case study</button>
+    </div>
+
+    <div class="project-card">
+      <h3>Eaton Data Center Management</h3>
+      <div class="project-meta">
+        <span><strong>Role:</strong> Lead Designer</span>
+        <span><strong>Duration:</strong> 2019-2021</span>
+        <span><strong>Impact:</strong> Complex configuration tool that modernized power management thinking</span>
+      </div>
+      <p>Managing critical power infrastructure and decision management automation for large data centers.</p>
+      <ul>
+        <li>Developed web app and iPad app for data center managers</li>
+        <li>Enabled operators to build redundancy for power events</li>
+        <li>Complex configuration tool that modernized power management thinking</li>
+        <li>Enabled automation for critical infrastructure decisions</li>
+      </ul>
+      <button class="case-study-btn" disabled>Contact for complete case study</button>
+    </div>
   </div>
-</section>
-
----
-
-<section style="margin-top: 120px;">
-  <h2>Introduction</h2>
-  
-  <p>I'm a Principal Designer. I build and scale design teams, launch digital platforms, and deliver results in industrial and manufacturing. I lead by example, focus on outcomes, and get things done. I work well in global, remote teams and push people to do their best work.</p>
 </section>
 
 ---
@@ -64,11 +98,11 @@ layout: main
   <h2>Awards & Recognition</h2>
   
   <ul>
-    <li><a href="https://ifdesign.com/en/winner-ranking/project/eaton-brightlayer-industrial-remote-monitoring-app/316753">iF Design Award Winner: Eaton Brightlayer Industrial Remote Monitoring App</a></li>
     <li><a href="https://ifdesign.com/en/winner-ranking/project/nexus-platform-ecosystem/642983">iF Design Award Winner: Hexagon Nexus Platform Ecosystem</a></li>
     <li><a href="https://ifdesign.com/en/winner-ranking/project/nexus-3d-whiteboard/643025">iF Design Award Winner: Hexagon Nexus 3D Whiteboard</a></li>
     <li><a href="https://ifdesign.com/en/winner-ranking/project/nexus-home/643106">iF Design Award Winner: Hexagon Nexus Home</a></li>
     <li><strong>2024 In-House Design Team of the Year</strong> (AIGA Pittsburgh)</li>
+    <li><a href="https://ifdesign.com/en/winner-ranking/project/eaton-brightlayer-industrial-remote-monitoring-app/316753">iF Design Award Winner: Eaton Brightlayer Industrial Remote Monitoring App</a></li>
   </ul>
 </section>
 
@@ -78,8 +112,6 @@ layout: main
   <h2>Get in Touch</h2>
   <p>Interested in working together? Let's discuss how we can create something amazing.</p>
   <div class="cta-links">
-    <a href="/work">View My Work</a>
-    <a href="/blog">Read My Blog</a>
     <a href="https://linkedin.com/in/iantodhunter">Connect on LinkedIn</a>
   </div>
 </div>
