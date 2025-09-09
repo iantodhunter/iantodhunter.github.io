@@ -1,0 +1,739 @@
+:root {
+  /* Colors */
+  --color-text: #525252;
+  --color-gray-2: #828282;
+  --color-gray-1: #E0E0E0;
+  --color-bg: #FFFDFF;
+  --color-blue-dark: #0F4471;
+  --color-blue-bright: #2335EB;
+  --color-red-accent: #FC3C3C; /* use sparingly */
+
+  /* Typography */
+  --font-display: "Syne", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-body: "Hedvig Letters Serif", Georgia, Cambria, "Times New Roman", serif;
+
+  --size-display-1: 96px;
+  --size-display-2: 48px;
+  --size-h2: 16px;
+  --size-body: 14px;
+  --size-caption: 10px;
+
+  /* Spacing */
+  --page-margin: 120px;
+  --gutter: 24px;
+  --section-gap: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography helpers */
+.display-1 {
+  font-family: var(--font-display);
+  font-weight: 200;
+  font-size: var(--size-display-1);
+  letter-spacing: 0.5em;
+}
+
+.display-2,
+h1.display-2,
+h2.display-2 {
+  font-family: var(--font-display);
+  font-size: var(--size-display-2);
+  letter-spacing: -0.04em;
+  margin: 0 0 0.5em 0;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: var(--size-h2);
+  margin: 2em 0 0.75em 0;
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--size-caption);
+  color: var(--color-gray-2);
+}
+
+a {
+  color: var(--color-blue-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--page-margin);
+  padding-right: var(--page-margin);
+}
+
+header.site-header {
+  padding: 32px var(--page-margin) 0 var(--page-margin);
+}
+
+main {
+  padding: 0 var(--page-margin);
+}
+
+section {
+  margin-bottom: var(--section-gap);
+}
+
+/* Homepage design - using tiles.svg */
+.tiles-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  background: #F8F8F8;
+  margin: 0;
+}
+
+/* Homepage main styles - remove padding for full width background */
+body main {
+  padding: 0;
+  margin: 0;
+}
+
+.design-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* IAN Logo from assets */
+.logo {
+  position: fixed;
+  bottom: 80px;
+  left: 80px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-svg {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.logo-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: #D9D9D9;
+  letter-spacing: 0.05em;
+}
+
+/* Tiles center container */
+.tiles-center {
+  position: relative;
+}
+/* Overlay labels svg sits on top of main svg */
+.tiles-center #tiles-labels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 867px;
+  height: 420px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* SVG tiles styling */
+svg#tiles {
+  width: 867px;
+  height: 420px;
+}
+
+svg#tiles a {
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+svg#tiles a:hover {
+  transform: none;
+}
+
+svg#tiles path {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual tile hover colors */
+
+#tile-personal image {
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#tile-personal:hover image {
+  opacity: 1;
+}
+
+
+/* Advanced tile animations */
+svg#tiles a { 
+  cursor: pointer; 
+  position: relative;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: auto;
+}
+
+/* Ensure paths don't block each other during hover */
+svg#tiles a:hover {
+  z-index: 10;
+}
+
+svg#tiles a:not(:hover) {
+  z-index: 1;
+}
+
+svg#tiles path {
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+
+/* Clean SVG tile styling */
+svg#tiles a {
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+svg#tiles path {
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Photo reel on hover only */
+.tile-bg {
+  opacity: 0;
+  pointer-events: none;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+
+/* Professional tile - 600ms per image, 17 images = 10.2s total cycle */
+.professional-bg:nth-child(2) { animation: showImage 10.2s infinite; animation-delay: 0s; }
+.professional-bg:nth-child(3) { animation: showImage 10.2s infinite; animation-delay: 0.6s; }
+.professional-bg:nth-child(4) { animation: showImage 10.2s infinite; animation-delay: 1.2s; }
+.professional-bg:nth-child(5) { animation: showImage 10.2s infinite; animation-delay: 1.8s; }
+.professional-bg:nth-child(6) { animation: showImage 10.2s infinite; animation-delay: 2.4s; }
+.professional-bg:nth-child(7) { animation: showImage 10.2s infinite; animation-delay: 3.0s; }
+.professional-bg:nth-child(8) { animation: showImage 10.2s infinite; animation-delay: 3.6s; }
+.professional-bg:nth-child(9) { animation: showImage 10.2s infinite; animation-delay: 4.2s; }
+.professional-bg:nth-child(10) { animation: showImage 10.2s infinite; animation-delay: 4.8s; }
+.professional-bg:nth-child(11) { animation: showImage 10.2s infinite; animation-delay: 5.4s; }
+.professional-bg:nth-child(12) { animation: showImage 10.2s infinite; animation-delay: 6.0s; }
+.professional-bg:nth-child(13) { animation: showImage 10.2s infinite; animation-delay: 6.6s; }
+.professional-bg:nth-child(14) { animation: showImage 10.2s infinite; animation-delay: 7.2s; }
+.professional-bg:nth-child(15) { animation: showImage 10.2s infinite; animation-delay: 7.8s; }
+.professional-bg:nth-child(16) { animation: showImage 10.2s infinite; animation-delay: 8.4s; }
+.professional-bg:nth-child(17) { animation: showImage 10.2s infinite; animation-delay: 9.0s; }
+.professional-bg:nth-child(18) { animation: showImage 10.2s infinite; animation-delay: 9.6s; }
+
+/* UX tile - 600ms per image, 12 images = 7.2s total cycle */
+.ux-bg:nth-child(2) { animation: showImage 7.2s infinite; animation-delay: 0s; }
+.ux-bg:nth-child(3) { animation: showImage 7.2s infinite; animation-delay: 0.6s; }
+.ux-bg:nth-child(4) { animation: showImage 7.2s infinite; animation-delay: 1.2s; }
+.ux-bg:nth-child(5) { animation: showImage 7.2s infinite; animation-delay: 1.8s; }
+.ux-bg:nth-child(6) { animation: showImage 7.2s infinite; animation-delay: 2.4s; }
+.ux-bg:nth-child(7) { animation: showImage 7.2s infinite; animation-delay: 3.0s; }
+.ux-bg:nth-child(8) { animation: showImage 7.2s infinite; animation-delay: 3.6s; }
+.ux-bg:nth-child(9) { animation: showImage 7.2s infinite; animation-delay: 4.2s; }
+.ux-bg:nth-child(10) { animation: showImage 7.2s infinite; animation-delay: 4.8s; }
+.ux-bg:nth-child(11) { animation: showImage 7.2s infinite; animation-delay: 5.4s; }
+.ux-bg:nth-child(12) { animation: showImage 7.2s infinite; animation-delay: 6.0s; }
+.ux-bg:nth-child(13) { animation: showImage 7.2s infinite; animation-delay: 6.6s; }
+
+/* Facilitation tile - 600ms per image, 12 images = 7.2s total cycle */
+.facilitation-bg:nth-child(2) { animation: showImage 7.2s infinite; animation-delay: 0s; }
+.facilitation-bg:nth-child(3) { animation: showImage 7.2s infinite; animation-delay: 0.6s; }
+.facilitation-bg:nth-child(4) { animation: showImage 7.2s infinite; animation-delay: 1.2s; }
+.facilitation-bg:nth-child(5) { animation: showImage 7.2s infinite; animation-delay: 1.8s; }
+.facilitation-bg:nth-child(6) { animation: showImage 7.2s infinite; animation-delay: 2.4s; }
+.facilitation-bg:nth-child(7) { animation: showImage 7.2s infinite; animation-delay: 3.0s; }
+.facilitation-bg:nth-child(8) { animation: showImage 7.2s infinite; animation-delay: 3.6s; }
+.facilitation-bg:nth-child(9) { animation: showImage 7.2s infinite; animation-delay: 4.2s; }
+.facilitation-bg:nth-child(10) { animation: showImage 7.2s infinite; animation-delay: 4.8s; }
+.facilitation-bg:nth-child(11) { animation: showImage 7.2s infinite; animation-delay: 5.4s; }
+.facilitation-bg:nth-child(12) { animation: showImage 7.2s infinite; animation-delay: 6.0s; }
+.facilitation-bg:nth-child(13) { animation: showImage 7.2s infinite; animation-delay: 6.6s; }
+
+/* Prototyping tile - 600ms per image, 10 images = 6.0s total cycle */
+.prototyping-bg:nth-child(2) { animation: showImage 6.0s infinite; animation-delay: 0s; }
+.prototyping-bg:nth-child(3) { animation: showImage 6.0s infinite; animation-delay: 0.6s; }
+.prototyping-bg:nth-child(4) { animation: showImage 6.0s infinite; animation-delay: 1.2s; }
+.prototyping-bg:nth-child(5) { animation: showImage 6.0s infinite; animation-delay: 1.8s; }
+.prototyping-bg:nth-child(6) { animation: showImage 6.0s infinite; animation-delay: 2.4s; }
+.prototyping-bg:nth-child(7) { animation: showImage 6.0s infinite; animation-delay: 3.0s; }
+.prototyping-bg:nth-child(8) { animation: showImage 6.0s infinite; animation-delay: 3.6s; }
+.prototyping-bg:nth-child(9) { animation: showImage 6.0s infinite; animation-delay: 4.2s; }
+.prototyping-bg:nth-child(10) { animation: showImage 6.0s infinite; animation-delay: 4.8s; }
+.prototyping-bg:nth-child(11) { animation: showImage 6.0s infinite; animation-delay: 5.4s; }
+
+/* Personal tile - 600ms per image, 5 images = 3.0s total cycle */
+.personal-bg:nth-child(2) { animation: showImage 3.0s infinite; animation-delay: 0s; }
+.personal-bg:nth-child(3) { animation: showImage 3.0s infinite; animation-delay: 0.6s; }
+.personal-bg:nth-child(4) { animation: showImage 3.0s infinite; animation-delay: 1.2s; }
+.personal-bg:nth-child(5) { animation: showImage 3.0s infinite; animation-delay: 1.8s; }
+.personal-bg:nth-child(6) { animation: showImage 3.0s infinite; animation-delay: 2.4s; }
+
+/* Play animation on hover, force stop on mouse out */
+svg#tiles a:hover .tile-bg {
+  animation-play-state: running !important;
+}
+
+svg#tiles a:not(:hover) .tile-bg {
+  animation-play-state: paused !important;
+  opacity: 0 !important;
+  animation: none !important;
+}
+
+/* Simple instant swap - no fade transitions */
+@keyframes showImage {
+  0%, 24.9% { opacity: 1; }
+  25%, 49.9% { opacity: 0; }
+  50%, 74.9% { opacity: 0; }
+  75%, 100% { opacity: 0; }
+}
+
+/* Professional tile text */
+#tile-professional:hover ~ #text-professional {
+  opacity: 1;
+}
+
+/* Story images styling */
+.story-images {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.story-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.story-image:hover {
+  transform: scale(1.02);
+}
+
+/* Portfolio gallery styling */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery-image {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+/* Different image sizes */
+.gallery-image.small {
+  height: 150px;
+  grid-column: span 1;
+}
+
+.gallery-image.medium {
+  height: 200px;
+  grid-column: span 1;
+}
+
+.gallery-image.large {
+  height: 300px;
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .gallery-image.large {
+    grid-column: span 1;
+    height: 200px;
+  }
+  
+  .page-content {
+    padding: 1rem;
+  }
+  
+  .content-section {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Perimeter text styling */
+.tile-perimeter-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  fill: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Container perimeter text styling */
+.container-perimeter-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 4%;
+  fill: #999999;
+  opacity: 0;
+  transition: opacity 0.3s ease, fill 0.3s ease;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+/* Show container perimeter text on any tile hover */
+.tile-container:hover .container-perimeter-text {
+  opacity: 1;
+}
+
+/* Center column layout for subpages */
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+/* Remove indentation from sections, but keep list indentation */
+.content-section > p,
+.content-section > h1,
+.content-section > h2,
+.content-section > h3,
+.content-section > .intro-text,
+.content-section > .story-images,
+.content-section > .portfolio-gallery {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Ensure lists maintain proper indentation */
+.content-section ul,
+.content-section ol {
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+.content-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Darken text when specific tiles are hovered */
+#tile-professional:hover ~ #perimeter-text-svg .container-perimeter-text,
+#tile-ux:hover ~ #perimeter-text-svg .container-perimeter-text,
+#tile-facilitation:hover ~ #perimeter-text-svg .container-perimeter-text,
+#tile-prototyping:hover ~ #perimeter-text-svg .container-perimeter-text,
+#tile-personal:hover ~ #perimeter-text-svg .container-perimeter-text {
+  fill: #222222;
+  opacity: 1;
+}
+
+#tile-professional:hover ~ #text-professional textPath {
+  animation: textFlow 8s linear infinite;
+}
+
+/* UX tile text */
+#tile-ux:hover ~ #text-ux {
+  opacity: 1;
+}
+
+#tile-ux:hover ~ #text-ux textPath {
+  animation: textFlow 6s linear infinite;
+}
+
+/* Facilitation tile text */
+#tile-facilitation:hover ~ #text-facilitation {
+  opacity: 1;
+}
+
+#tile-facilitation:hover ~ #text-facilitation textPath {
+  animation: textFlow 7s linear infinite;
+}
+
+/* Prototyping tile text */
+#tile-prototyping:hover ~ #text-prototyping {
+  opacity: 1;
+}
+
+#tile-prototyping:hover ~ #text-prototyping textPath {
+  animation: textFlow 5s linear infinite;
+}
+
+/* Personal tile text */
+#tile-personal:hover ~ #text-personal {
+  opacity: 1;
+}
+
+#tile-personal:hover ~ #text-personal textPath {
+  animation: textFlow 9s linear infinite;
+}
+
+/* Text flow animation */
+@keyframes textFlow {
+  0% {
+    start-offset: 0%;
+  }
+  100% {
+    start-offset: 100%;
+  }
+}
+
+/* Click animation states */
+svg#tiles a.clicking path {
+  fill: var(--color-blue-dark);
+  stroke: var(--color-blue-dark);
+  stroke-width: 2;
+}
+
+/* Subpage structure */
+.hero {
+  margin-top: 24px;
+  border: 1px solid var(--color-gray-1);
+  height: 300px;
+  background: #fff;
+}
+
+.content {
+  max-width: 720px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+@media (max-width: 960px) {
+  :root { --page-margin: 24px; }
+  .display-1 { font-size: 64px; }
+  .display-2 { font-size: 32px; }
+}
+
+/* Page-specific styles */
+body .page-content {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 2rem !important;
+  background: var(--color-bg) !important;
+  min-height: 100vh !important;
+}
+
+.page-header {
+  margin-bottom: 80px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+body .page-header h1 {
+  font-family: var(--font-display) !important;
+  font-size: 72px !important;
+  font-weight: 200 !important;
+  color: var(--color-text) !important;
+  margin: 0 0 40px 0 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.back-link {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-gray-3);
+  text-decoration: none;
+  transition: color 200ms ease;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.back-link:hover {
+  color: var(--color-text);
+}
+
+.content-section {
+  margin-bottom: 100px;
+  max-width: 800px;
+}
+
+.content-section h2 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 200;
+  color: var(--color-text);
+  margin: 0 0 60px 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.content-section h3 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 200;
+  color: var(--color-text);
+  margin: 80px 0 40px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+body .content-section p {
+  font-family: var(--font-body) !important;
+  font-size: 20px !important;
+  line-height: 1.7 !important;
+  color: var(--color-text) !important;
+  margin: 0 0 40px 0 !important;
+  max-width: 600px !important;
+}
+
+.lead {
+  font-size: 28px;
+  font-weight: 200;
+  color: var(--color-text);
+  margin-bottom: 60px;
+}
+
+.intro-text {
+  margin-bottom: 80px;
+}
+
+.intro-text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.highlight-list,
+.awards-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+}
+
+.highlight-list li,
+.awards-list li {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+.highlight-list li strong,
+.awards-list li strong {
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.awards-list a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.awards-list a:hover {
+  color: var(--color-blue-dark);
+  text-decoration: underline;
+}
+
+.story-section {
+  background: var(--color-gray-0);
+  padding: 80px;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-blue);
+  margin: 100px 0;
+}
+
+.story-section h2 {
+  color: var(--color-blue);
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+.story-section p {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.story-section ul {
+  margin: 40px 0;
+  padding-left: 0;
+  max-width: 600px;
+}
+
+.story-section li {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.awards-section {
+  background: var(--color-gray-0);
+  padding: 80px;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-red);
+  margin: 100px 0;
+}
+
+.awards-section h2 {
+  color: var(--color-red);
+  font-size: 48px;
+  font-weight: 200;
+}
+
+

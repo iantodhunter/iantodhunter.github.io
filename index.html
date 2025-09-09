@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ian Todhunter — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Syne:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <script src="https://unpkg.com/flubber@0.4.2/build/flubber.min.js"></script>
+</head>
+<body>
+  <main>
+    <section class="tiles-wrap" aria-label="Navigate to sections">
+      <div class="design-container">
+        <!-- IAN Logo from assets -->
+        <div class="logo">
+          <img src="assets/ian-logo.svg" alt="IAN" class="logo-svg">
+          <div class="logo-name">Ian Todhunter</div>
+        </div>
+        
+        <!-- Original tiles.svg in center -->
+        <div class="tiles-center tile-container">
+          <svg id="tiles" viewBox="0 0 867 420" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <!-- Text paths that follow the perimeter of each tile -->
+              <path id="professional-text-path" d="M407.907 125.263C413.38 121.493 420.614 121.499 426.081 125.278L514.261 186.23C520.734 190.705 522.993 199.223 519.587 206.317L421.356 410.925C418.693 416.472 413.086 420 406.933 420H31.4355C15.73 420 9.42519 399.732 22.3594 390.823L407.907 125.263Z" fill="none"/>
+              <path id="ux-text-path" d="M493.715 0C509.218 0 515.66 19.8427 503.113 28.9492L285.344 187L24.7705 357.767C14.1298 364.74 6.83613e-05 357.107 0 344.385V16C1.89569e-06 7.16345 7.16345 0 16 0H493.715Z" fill="none"/>
+              <path id="facilitation-text-path" d="M717.427 108.116C724.159 104.558 732.467 106.238 737.288 112.133L862.385 265.08C864.723 267.938 866 271.517 866 275.21V404C866 412.837 858.837 420 850 420H465.964C454.426 420 446.681 408.158 451.306 397.587L533.76 209.121C535.21 205.805 537.743 203.079 540.942 201.388L717.427 108.116Z" fill="none"/>
+              <path id="prototyping-text-path" d="M851 0C859.837 4.84472e-07 867 7.16348 867 16V203.447C867 218.726 847.63 225.313 838.316 213.201L743.799 90.292C739.015 84.0711 730.425 82.2379 723.519 85.9639L668.086 115.868C662.813 118.713 656.393 118.374 651.45 114.989L526.152 29.2021C513.174 20.3165 519.463 -6.65963e-08 535.191 0H851Z" fill="none"/>
+              <path id="personal-text-path" d="M500.398 45.4746C506.011 40.5207 514.308 40.1204 520.371 44.5107L619.873 116.563C629.423 123.479 628.466 137.998 618.091 143.601L549.126 180.842C543.833 183.7 537.383 183.348 532.433 179.93L445.825 120.125C437.272 114.215 436.538 101.846 444.332 94.9658L500.398 45.4746Z" fill="none"/>
+              
+              <!-- Clip paths for background images -->
+              <clipPath id="clip-professional">
+                <path d="M407.907 125.263C413.38 121.493 420.614 121.499 426.081 125.278L514.261 186.23C520.734 190.705 522.993 199.223 519.587 206.317L421.356 410.925C418.693 416.472 413.086 420 406.933 420H31.4355C15.73 420 9.42519 399.732 22.3594 390.823L407.907 125.263Z"/>
+              </clipPath>
+              <clipPath id="clip-ux">
+                <path d="M493.715 0C509.218 0 515.66 19.8427 503.113 28.9492L285.344 187L24.7705 357.767C14.1298 364.74 6.83613e-05 357.107 0 344.385V16C1.89569e-06 7.16345 7.16345 0 16 0H493.715Z"/>
+              </clipPath>
+              <clipPath id="clip-facilitation">
+                <path d="M717.427 108.116C724.159 104.558 732.467 106.238 737.288 112.133L862.385 265.08C864.723 267.938 866 271.517 866 275.21V404C866 412.837 858.837 420 850 420H465.964C454.426 420 446.681 408.158 451.306 397.587L533.76 209.121C535.21 205.805 537.743 203.079 540.942 201.388L717.427 108.116Z"/>
+              </clipPath>
+              <clipPath id="clip-prototyping">
+                <path d="M851 0C859.837 4.84472e-07 867 7.16348 867 16V203.447C867 218.726 847.63 225.313 838.316 213.201L743.799 90.292C739.015 84.0711 730.425 82.2379 723.519 85.9639L668.086 115.868C662.813 118.713 656.393 118.374 651.45 114.989L526.152 29.2021C513.174 20.3165 519.463 -6.65963e-08 535.191 0H851Z"/>
+              </clipPath>
+              <clipPath id="clip-personal">
+                <path d="M500.398 45.4746C506.011 40.5207 514.308 40.1204 520.371 44.5107L619.873 116.563C629.423 123.479 628.466 137.998 618.091 143.601L549.126 180.842C543.833 183.7 537.383 183.348 532.433 179.93L445.825 120.125C437.272 144.215 436.538 101.846 444.332 94.9658L500.398 45.4746Z"/>
+              </clipPath>
+            </defs>
+            
+            <a id="tile-professional" href="/professional-background.html" aria-label="Professional History" title="Professional Background">
+              <path id="path-professional" d="M407.907 125.263C413.38 121.493 420.614 121.499 426.081 125.278L514.261 186.23C520.734 190.705 522.993 199.223 519.587 206.317L421.356 410.925C418.693 416.472 413.086 420 406.933 420H31.4355C15.73 420 9.42519 399.732 22.3594 390.823L407.907 125.263Z" fill="#525252"/>
+              
+              <!-- Professional background images (visual images as priority, then story images) -->
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-0.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-01.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-2.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-3.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-4.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-5.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-6.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-7.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-8.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-9.jpg" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/visual-10.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-01.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-01.2.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-01.3.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-01.4.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-02.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg professional-bg" href="assets/image_dump/story-02.1.png" x="31" y="125" width="483" height="295" clip-path="url(#clip-professional)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              
+            </a>
+            
+            <a id="tile-ux" href="/user-experience.html" aria-label="User Experience / Research" title="User Experience & Research">
+              <path id="path-ux" d="M493.715 0C509.218 0 515.66 19.8427 503.113 28.9492L285.344 187L24.7705 357.767C14.1298 364.74 6.83613e-05 357.107 0 344.385V16C1.89569e-06 7.16345 7.16345 0 16 0H493.715Z" fill="#525252"/>
+              
+              <!-- UX background images -->
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-01.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-02.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-05.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-06.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-07.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-08.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-09.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-10.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-10.2.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-11.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/userexperience-14.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg ux-bg" href="assets/image_dump/user-experience-20.png" x="0" y="0" width="494" height="358" clip-path="url(#clip-ux)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              
+            </a>
+            
+            <a id="tile-facilitation" href="/facilitation.html" aria-label="Facilitation" title="Facilitation & Design Thinking">
+              <path id="path-facilitation" d="M717.427 108.116C724.159 104.558 732.467 106.238 737.288 112.133L862.385 265.08C864.723 267.938 866 271.517 866 275.21V404C866 412.837 858.837 420 850 420H465.964C454.426 420 446.681 408.158 451.306 397.587L533.76 209.121C535.21 205.805 537.743 203.079 540.942 201.388L717.427 108.116Z" fill="#525252"/>
+              
+              <!-- Facilitation background images -->
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-05.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-08.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-14.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-18.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-18.2.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation18.1.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-5.1.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-5.2.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-24.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-30.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-45.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg facilitation-bg" href="assets/image_dump/facilitation-50.png" x="465" y="108" width="401" height="312" clip-path="url(#clip-facilitation)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              
+            </a>
+            
+            <a id="tile-prototyping" href="/prototyping.html" aria-label="Prototyping" title="Prototyping & Visual Design">
+              <path id="path-prototyping" d="M851 0C859.837 4.84472e-07 867 7.16348 867 16V203.447C867 218.726 847.63 225.313 838.316 213.201L743.799 90.292C739.015 84.0711 730.425 82.2379 723.519 85.9639L668.086 115.868C662.813 118.713 656.393 118.374 651.45 114.989L526.152 29.2021C513.174 20.3165 519.463 -6.65963e-08 535.191 0H851Z" fill="#525252"/>
+              
+              <!-- Prototyping background images -->
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-02.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-06.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-12.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-17.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-18.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-19.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-20.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-23.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-26.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg prototyping-bg" href="assets/image_dump/prototyping-28.png" x="526" y="0" width="341" height="204" clip-path="url(#clip-prototyping)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              
+            </a>
+            
+            <a id="tile-personal" href="/personal-background.html" aria-label="Personal Background" title="Personal Background">
+              <path id="path-personal" d="M500.398 45.4746C506.011 40.5207 514.308 40.1204 520.371 44.5107L619.873 116.563C629.423 123.479 628.466 137.998 618.091 143.601L549.126 180.842C543.833 183.7 537.383 183.348 532.433 179.93L445.825 120.125C437.272 114.215 436.538 101.846 444.332 94.9658L500.398 45.4746Z" fill="#525252"/>
+              
+              <!-- Personal background images -->
+              <image class="tile-bg personal-bg" href="assets/image_dump/personal-05.png" x="445" y="45" width="175" height="136" clip-path="url(#clip-personal)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg personal-bg" href="assets/image_dump/personal-10.png" x="445" y="45" width="175" height="136" clip-path="url(#clip-personal)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg personal-bg" href="assets/image_dump/personal-12.png" x="445" y="45" width="175" height="136" clip-path="url(#clip-personal)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg personal-bg" href="assets/image_dump/personal-22.png" x="445" y="45" width="175" height="136" clip-path="url(#clip-personal)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              <image class="tile-bg personal-bg" href="assets/image_dump/personal-25.png" x="445" y="45" width="175" height="136" clip-path="url(#clip-personal)" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+              
+            </a>
+          </svg>
+
+          <!-- Container perimeter text -->
+          <svg id="perimeter-text-svg" viewBox="-50 -50 967 520" style="position: absolute; top: -69px; left: -23%; width: calc(140%); height: calc(103% + 96px); pointer-events: none;">
+            <defs>
+              <!-- Rounded rectangle path with 16px padding around 867x420 tiles (899x452 total) -->
+              <path id="perimeter-rect" d="M 24 452
+                                          L 24 24 
+                                          Q 24 0 48 0
+                                          L 875 0 
+                                          Q 899 0 899 24 
+                                          L 899 428 
+                                          Q 899 452 875 452 
+                                          L 48 452 
+                                          Q 24 452 24 428 Z" 
+                    fill="none" stroke="none"/>
+            </defs>
+            
+            <!-- Single continuous text along perimeter, starting at bottom left corner -->
+            <text class="container-perimeter-text" opacity="0">
+              <textPath href="#perimeter-rect" startOffset="0%">USER EXPERIENCE&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;HUMAN•CENTERED RESEARCH AND DESIGN&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;INTERVIEWING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;CONTEXTUAL&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;PROTOTYPING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;VISUAL DESIGN&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;DESIGN SYSTEMS&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;RAPID PROTOTYPING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;FACILITATION&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;DESIGN THINKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;METHODS&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;CROSS•FUNCTIONAL LEADERSHIP&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;PROFESSIONAL HISTORY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;WORK&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;MANUFACT...</textPath>
+            </text>
+          </svg>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+ 
+
+
