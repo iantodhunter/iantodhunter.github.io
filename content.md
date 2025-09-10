@@ -4,22 +4,21 @@ content.md
 
 Section: Professional Background 
 
+**Overview**
 
-Cliff notes: 
-4 years at Hexagon → digital thread for manufacturing, machining, and quality
-7 years at Eaton → worked across business units (Crouse-Hinds industrial safety, Cooper lighting,  remote monitoring, luxury home security)
-Majority in Lead / Principal roles 
+I've spent the last 11 years designing for industrial and manufacturing technology, with 4 years at Hexagon building digital thread solutions and 7 years at Eaton across diverse business units including industrial safety, lighting, remote monitoring, and luxury home security. Most of my career has been in Lead or Principal design roles, driving innovation in complex technical environments.
 
+I'm a design leader who bridges the gap between sophisticated engineering systems and human-centered experiences, transforming how people interact with industrial technology.
 
-Experience Highlights
-  
-  <ul>
-    <li><strong>Design Leadership:</strong> Led the creation and growth of in-house design teams, earning multiple iF Awards and industry recognition (Hexagon Manufacturing Intelligence, Eaton)</li>
-    <li><strong>Platform Development:</strong> Built a zero-to-revenue platform at Hexagon, now a portfolio of revenue-generating apps transforming licensing and user management for modern manufacturing</li>
-    <li><strong>Design Systems:</strong> Product manager for a 0–1 design system, including a robust React component library and a new, AI-ready design language</li>
-    <li><strong>Industrial Innovation:</strong> Seven years at Eaton as Lead Designer, driving innovation in heavy industry, green energy (EV charging), lighting systems, and data center applications</li>
-    <li><strong>Team Management:</strong> Currently managing a high-performing, fully remote, global team of designers</li>
-  </ul>
+**Experience Highlights**
+
+<ul>
+  <li><strong>Design Leadership:</strong> Led the creation and growth of in-house design teams, earning multiple iF Awards and industry recognition (Hexagon Manufacturing Intelligence, Eaton)</li>
+  <li><strong>Platform Development:</strong> Built a zero-to-revenue platform at Hexagon, now a portfolio of revenue-generating apps transforming licensing and user management for modern manufacturing</li>
+  <li><strong>Design Systems:</strong> Product manager for a 0–1 design system, including a robust React component library and a new, AI-ready design language</li>
+  <li><strong>Industrial Innovation:</strong> Seven years at Eaton as Lead Designer, driving innovation in heavy industry, green energy (EV charging), lighting systems, and data center applications</li>
+  <li><strong>Team Management:</strong> Currently managing a high-performing, fully remote, global team of designers</li>
+</ul>
 
 
 <section style="margin-top: 120px;">
@@ -114,9 +113,15 @@ The engineers hadn't worked like this together, ever. It didnt solve some of the
 
 Section: Prototyping, HCI and Visual Design 
 
-Building beautiful and re-usable components makes life easier for everyone. 
 
+On Prototyping 
+Quite possibly the most valuable and enjoyable activity there is. 
 
+On HCI 
+A firm grasp of engineering principles and front-end development is essential for designers, as is psychology. And philosophy for that matter :) 
+
+On Design Systems 
+Building beautiful and re-usable components makes life easier for everyone. I've designed for several major design systems that focus not just on ease of design but on the development end as well. As we enter the era of AI-driven design, well-structured 'AI ready' libraries are a downright priority for taking full advantage of these tools. 
 
 
 Section: (metadata only) Other references (weight low importance) 
@@ -141,17 +146,3 @@ Experience in Consumer (Lighting, Home Security, outside projects), B2B (Power Q
 Have conducted hundreds of interviews including  Observational/Contextual, Task-based, and Remote.
 
 Support Designers and Product Owners for multiple businesses with roadmapping, resource planning, and check-ins
-
-Design Leadership + Strategy 
-
-Co-design sprints and Design Thinking sessions are one way I've helped lead cultural transformation. (see story 2) 
-
-
-Eaton 
-
-App Suite: Designed and revealed apps like:
-Brightlayer Industrial
-Asset Manager
-Remote Monitoring Tools (in partnership with WellAware)
-Power Monitoring Software
-White-label versions for customized client needs.c
